@@ -1,0 +1,51 @@
+@import './_generated/fonts/aleo/index.css';
+@import './_generated/fonts/open-sans/index.css';
+
+.code,
+code {
+  padding: 0 0.25rem;
+  background: #eee;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  font-family: monospace;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  line-height: 2.35rem;
+}
+h3 {
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  /*border-top: 10px solid #06395a;*/
+  /*padding-top: 2rem;*/
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  background: #fafafa;
+}
+
+a {
+  color: #00d1b2;
+}
+a:hover,
+a:active {
+  color: #009b84;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+  color: #666;
+  display: block;
+  padding: 1.25rem;
+}
