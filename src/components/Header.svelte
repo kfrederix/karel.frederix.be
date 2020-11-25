@@ -28,7 +28,7 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: solid 6px #fff;
+    border: solid 4px #ddd;
   }
   nav {
     margin-top: 1rem;
