@@ -4,18 +4,24 @@
 </script>
 
 <style>
-  h1, h3 {
-    margin: 0.5rem 0;
-    color: #222;
+  h1, h2 {
+    color: #fff;
   }
   h1 {
-    margin-top: 1.5rem;
+    margin: 1.5rem 0 1.0rem 0;
   }
-  .site-header {
+  h2 {
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+    color: #ddd;
+    text-transform: uppercase;
+  }
+  header {
     text-align: center;
     padding: 2.0rem 0.5rem 1.0rem 0.5rem;
-    background-color: #efefef;
-    margin: 0 -1.25rem;
+    background-color: #4A4A4A;
+    max-width: 900px;
+    margin: 0 auto;
   }
   .avatar {
     vertical-align: middle;
@@ -23,35 +29,44 @@
     height: 120px;
     border-radius: 50%;
   }
-  .nav-links {
+  nav {
     margin-top: 1rem;
     padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .nav-links a {
+  nav a {
     display: block;
     margin: 0 0.5rem;
     color: #00d1b2;
     text-decoration: none;
-    border-radius: 5%;
-    padding: 4px 8px;
+    padding: 4px 0;
     border-bottom: solid 2px transparent;
   }
-  .nav-links a:hover,
-  .nav-links a:active,
-  .nav-links a.is-active {
-    border-bottom-color:  #444;
+  nav a:hover:not(.is-active),
+  nav a:active:not(.is-active) {
+    color: #00ffd9;
+  }
+  nav a.is-active {
+    color: #00ffd9;
+    border-bottom-color:  #00ffd9;
+    pointer-events: none;
   }
 </style>
 
-<div class="site-header">
-  <img class="avatar" alt="avatar" src="{aboutMe.imageUrl}?h=120"/>
+<header>
+  <!--
+    Best Practice:
+     specifying width and height on the img tag explicitly allows 
+     the image to take up the space before it loads
+  -->
+  <img class="avatar" alt="avatar" src="{aboutMe.imageUrl}?h=361" width="120" height="120"/>
+
   <h1>{aboutMe.name}</h1>
-  <h3>{aboutMe.title}</h3>
-  <div class="nav-links" role="navigation">
+  <h2>{aboutMe.title}</h2>
+  <nav class="nav-links" role="navigation">
     <a href="/" class:is-active={permalink === '/'}>About</a>
     <a href="/projects"  class:is-active={permalink.indexOf('/projects') === 0}>Projects</a>
-  </div>
-</div>
+  </nav>
+</header>

@@ -1,5 +1,5 @@
 <script>
-  export let data, helpers;
+  export let data;
 </script>
 
 <style>
@@ -8,11 +8,7 @@
   }
 </style>
 
-<svelte:head>
-  <!-- <title>Karel Frederix</title> -->
-</svelte:head>
-
 <div class="about">
-  <h2>Hi! I'm Karel</h2>
+  <h1>Hi! I'm Karel</h1>
   <p>{@html data.aboutMe.bio}</p>
 </div>

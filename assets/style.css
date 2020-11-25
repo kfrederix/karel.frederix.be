@@ -18,9 +18,6 @@ h4 {
   font-weight: normal;
   line-height: 2.35rem;
 }
-h3 {
-  text-transform: uppercase;
-}
 
 body {
   margin: 0;
@@ -34,11 +31,11 @@ body {
 }
 
 a {
-  color: #00d1b2;
+  color: #007B69;
 }
 a:hover,
 a:active {
-  color: #009b84;
+  color: #007B69;
 }
 
 .box {
@@ -48,4 +45,5 @@ a:active {
   color: #666;
   display: block;
   padding: 1.25rem;
+  font-size: 1rem;
 }

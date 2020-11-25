@@ -4,18 +4,12 @@
 </script>
 
 <style>
-  :global(h1) {
-    /*font-style: italic;*/
-  }
-  :global(h3) {
-    color: #00ad93;
-  }
   .container {
     max-width: 900px;
     margin: 0 auto 2rem auto;
     padding: 0 1.25rem;
   }
-  .content {
+  section {
     padding-top: 1rem;
   }
 
@@ -27,12 +21,12 @@
 
 <svelte:head>
   <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css" />
   <title>Karel Frederix</title>
+  <meta name="description" content="Karel Frederix is a Software Engineer based in Hasselt, BE">
 </svelte:head>
-<div class="container">
-  <Header aboutMe={data.aboutMe} permalink={request.permalink} />
-  <div class="content">
+<Header aboutMe={data.aboutMe} permalink={request.permalink} />
+<section>
+  <div class="container">
     {@html templateHtml}
   </div>
-</div>
+</section>

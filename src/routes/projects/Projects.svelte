@@ -17,19 +17,25 @@
     height: 80;
     margin: 1rem;
   }
-  h3 {
+  h2 {
     margin-top: 0;
+    color: #007B69;
+    font-size: 1.3rem;
   }
 </style>
 
-<h2>Projects</h2>
+<svelte:head>
+  <meta name="description" content="An overview of recent work by Karel Frederix">
+</svelte:head>
+
+<h1>Projects</h1>
 <p>
   An overview of some recent projects which I have worked on.
 </p>
 <div class="projects">
   {#each data.projects as project}
     <div class="project box">
-      <h3>{project.name}</h3>
+      <h2>{project.name}</h2>
       {@html project.description}
       <div class="photo-gallery">
         {#each project.photos as photo, index}
