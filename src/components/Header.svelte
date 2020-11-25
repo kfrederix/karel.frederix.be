@@ -50,7 +50,6 @@
     color: #00ffd9;
   }
   nav a.is-active {
-    color: #00ffd9;
     border-bottom-color:  #00ffd9;
     pointer-events: none;
   }
