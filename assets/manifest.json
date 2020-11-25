@@ -1,0 +1,22 @@
+{
+  "short_name": "kfrederix",
+  "name": "Karel Frederix",
+  "description": "Karel Frederix is a Software Engineer based in Hasselt, BE",
+  "icons": [
+    {
+      "src": "/assets/img/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#fafafa",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#4A4A4A"
+}
