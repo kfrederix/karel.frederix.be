@@ -1,3 +1,4 @@
+const slugify = require('slugify');
 const dataClient = require('../../dataClient');
 
 module.exports = {
@@ -10,7 +11,9 @@ module.exports = {
   // If permalink() is ommited, ({request}) => `/${request.slug}/` will be placed as the default.
   permalink: ({ request }) => `/${request.slug}`,
   data: async ({ request }) => {
-    const projects = await dataClient.getProjects();
+    const projects = (await dataClient.getProjects()).map((p) => {
+      return { ...p, slug: slugify(p.name, { lower: true }) };
+    });
     return {
       projects,
     };

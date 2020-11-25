@@ -22,7 +22,7 @@
 <svelte:head>
   <link rel="stylesheet" href="/style.css" />
   <title>Karel Frederix</title>
-  <meta name="description" content="Karel Frederix is a Software Engineer based in Hasselt, BE">
+  <meta name="description" content="Karel Frederix is a Software Engineer based in Hasselt, BE" />
 </svelte:head>
 <Header aboutMe={data.aboutMe} permalink={request.permalink} />
 <section>
