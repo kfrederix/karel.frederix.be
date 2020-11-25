@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { build } = require('@elderjs/elderjs');
 
 (async () => {
