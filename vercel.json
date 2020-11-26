@@ -4,11 +4,11 @@
   },
   "headers": [
     {
-      "source": "/_elder/(.*)",
+      "source": "/_elderjs/(.*)",
       "headers" : [
         {
           "key" : "Cache-Control",
-          "value" : "public, max-age=600, immutable"
+          "value" : "public, max-age=600"
         }
       ]
     }
