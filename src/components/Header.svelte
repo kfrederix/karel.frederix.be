@@ -1,6 +1,7 @@
 <script>
   export let aboutMe;
   export let permalink;
+  export let isLarge;
 </script>
 
 <style>
