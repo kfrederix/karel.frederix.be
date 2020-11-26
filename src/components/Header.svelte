@@ -19,9 +19,9 @@
   }
   header {
     text-align: center;
-    padding: 2.0rem 0.5rem 1.0rem 0.5rem;
+    padding: 2.0rem 0 1.0rem 0;
     background-color: #4A4A4A;
-    max-width: 900px;
+    max-width: 940px;
     margin: 0 auto;
   }
   .avatar {
