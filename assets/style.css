@@ -1,5 +1,3 @@
-@import './_generated/fonts/open-sans/index.css';
-
 .code,
 code {
   padding: 0 0.25rem;
@@ -25,7 +23,7 @@ body {
   color: #444;
   /*border-top: 10px solid #06395a;*/
   /*padding-top: 2rem;*/
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: system-ui,BlinkMacSystemFont,-apple-system,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
   background: #fafafa;
 }
 
