@@ -28,4 +28,5 @@ module.exports = {
     },
   },
   shortcodes: { closePattern: '}}', openPattern: '{{' },
+  css: 'file',
 };

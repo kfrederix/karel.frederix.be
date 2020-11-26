@@ -4,6 +4,8 @@
 </script>
 
 <style>
+  @import url('../../assets/style.css');
+
   .container {
     max-width: 900px;
     margin: 0 auto 2rem auto;
@@ -26,7 +28,6 @@
   <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="stylesheet" href="/style.css" />
 </svelte:head>
 <Header aboutMe={data.aboutMe} permalink={request.permalink} isLarge={request.permalink === '/'} />
 <section>
