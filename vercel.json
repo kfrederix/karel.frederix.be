@@ -4,7 +4,7 @@
   },
   "headers": [
     {
-      "source": "/_elder/*",
+      "source": "/_elder/(.*)",
       "headers" : [
         {
           "key" : "Cache-Control",
