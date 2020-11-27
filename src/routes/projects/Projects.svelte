@@ -13,12 +13,18 @@
     margin-top: 1.5rem;
   }
   .photo-gallery {
-    margin: -0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
   }
   .thumbnail {
-    width: 80px;
-    height: 80px;
-    margin: 0.5rem;
+    margin: 0.5rem 0.2rem;
+    width: 100%;
+    max-width: 400px;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: auto;
   }
   h2 {
     margin-top: 0;
@@ -40,7 +46,9 @@
       {@html project.description}
       <div class="photo-gallery">
         {#each project.photos as photo, index}
-          <img class="thumbnail" alt="{project.name} {index + 1}" src="{photo.url}?w=241&h=241&fit=crop&crop=center" width="80" height="80" />
+          <div class="thumbnail">
+            <img alt="{project.name} {index + 1}" src="{photo.url}?w=400" />
+          </div>
         {/each}
       </div>
     </div>
