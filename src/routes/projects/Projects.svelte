@@ -25,6 +25,7 @@
   .thumbnail img {
     width: 100%;
     height: auto;
+    border-radius: 0.5rem;
   }
   h2 {
     margin-top: 0;
