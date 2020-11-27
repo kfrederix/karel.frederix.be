@@ -37,7 +37,7 @@
       {@html project.description}
       <div class="photo-gallery">
         {#each project.photos as photo, index}
-          <img class="thumbnail" alt="{project.name} {index + 1}" src="{photo.url}?w=80&h=80&fit=crop&crop=center" />
+          <img class="thumbnail" alt="{project.name} {index + 1}" src="{photo.url}?w=241&h=241&fit=crop&crop=center" width="80" height="80" />
         {/each}
       </div>
     </div>
