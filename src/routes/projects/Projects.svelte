@@ -12,10 +12,13 @@
   .project:not(:first-child) {
     margin-top: 1.5rem;
   }
+  .photo-gallery {
+    margin: -0.3rem;
+  }
   .thumbnail {
-    width: 80;
-    height: 80;
-    margin: 1rem;
+    width: 80px;
+    height: 80px;
+    margin: 0.5rem;
   }
   h2 {
     margin-top: 0;
