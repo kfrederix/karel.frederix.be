@@ -30,7 +30,8 @@
     height: 120px;
     border-radius: 50%;
     /*border: solid 4px #ddd;*/
-    box-shadow: 0 0 1rem 0 rgba(220,220,220,0.3)
+    box-shadow: 0 0 1rem 0 rgba(220,220,220,0.3);
+    margin-bottom: 1rem;
   }
   nav {
     margin-top: 1rem;
