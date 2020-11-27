@@ -13,7 +13,7 @@
   }
   h2 {
     margin: 0.5rem 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #ddd;
     text-transform: uppercase;
   }
