@@ -9,7 +9,7 @@
     color: #fff;
   }
   h1 {
-    margin: 2.5rem 0 1.0rem 0;
+    margin: 1.5rem 0 1.0rem 0;
   }
   h2 {
     margin: 0.5rem 0;
@@ -32,6 +32,7 @@
     /*border: solid 4px #ddd;*/
     box-shadow: 0 0 1rem 0 rgba(220,220,220,0.3);
     margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   nav {
     margin-top: 1rem;
