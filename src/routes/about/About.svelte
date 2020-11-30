@@ -9,7 +9,7 @@
 </style>
 
 <div class="about">
-  <h1>Hi! I'm Karel</h1>
+  <h1>About me</h1>
   <p>
     {@html data.aboutMe.bio}
   </p>

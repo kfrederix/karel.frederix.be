@@ -12,7 +12,7 @@
     padding: 0 1.25rem;
   }
   section {
-    padding-top: 1rem;
+    padding: 2rem 0 1.25rem 0;
   }
 
   :root {

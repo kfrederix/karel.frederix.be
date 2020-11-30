@@ -13,15 +13,13 @@
   }
   h2 {
     margin: 0.5rem 0;
-    font-size: 1.2rem;
-    color: #ddd;
-    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #ccc;
   }
   header {
     text-align: center;
-    padding: 2.0rem 0 1.0rem 0;
+    padding: 2.0rem 0 0 0;
     background-color: #4A4A4A;
-    max-width: 940px;
     margin: 0 auto;
   }
   .avatar {
@@ -36,17 +34,17 @@
   }
   nav {
     margin-top: 1rem;
-    padding: 0.5rem;
+    padding: 0 0 0.5rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   nav a {
     display: block;
-    margin: 0 0.5rem;
+    margin: 0;
+    padding: 0.2rem 1rem;
     color: #00d1b2;
     text-decoration: none;
-    padding: 4px 0;
     border-bottom: solid 2px transparent;
   }
   nav a:hover:not(.is-active),
@@ -56,6 +54,13 @@
   nav a.is-active {
     border-bottom-color:  #00ffd9;
     pointer-events: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    header {
+      border-radius: 0 0 1rem 1rem;
+      max-width: 940px;
+    }
   }
 </style>
 
@@ -67,8 +72,8 @@
   -->
   <img class="avatar" alt="avatar" src="{aboutMe.imageUrl}?h=361" width="120" height="120"/>
 
-  <h1>{aboutMe.name}</h1>
-  <h2>{aboutMe.title}</h2>
+  <h1>Hi! I'm Karel</h1>
+  <h2>I build web things.</h2>
   <nav class="nav-links" role="navigation">
     <a href="/" class:is-active={permalink === '/'}>About</a>
     <a href="/projects"  class:is-active={permalink.indexOf('/projects') === 0}>Projects</a>
