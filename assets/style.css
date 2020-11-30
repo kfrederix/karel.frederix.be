@@ -28,11 +28,27 @@ body {
 }
 
 a {
-  color: #007B69;
+  color: #009982;
 }
 a:hover,
 a:active {
   color: #00c2a5;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 2rem;
+}
+li {
+  position: relative;
+}
+ul li:before {
+  content: url(/img/check.svg);
+  margin-top: 3px;
+  margin-left: -26px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .box {
