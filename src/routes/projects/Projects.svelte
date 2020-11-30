@@ -33,6 +33,7 @@
     margin-top: 0;
     color: #007b69;
     font-size: 1.3rem;
+    line-height: 1;
   }
 </style>
 
