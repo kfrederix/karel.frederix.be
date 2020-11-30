@@ -5,16 +5,14 @@
 </script>
 
 <style>
-  h1, h2 {
-    color: #fff;
-  }
   h1 {
+    color: #eee;
     margin: 1.5rem 0 1.0rem 0;
   }
   h2 {
     margin: 0.5rem 0 1.5rem 0;
     font-size: 1.3rem;
-    color: #ccc;
+    color: #cdd;
   }
   header {
     text-align: center;
