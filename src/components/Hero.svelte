@@ -62,7 +62,7 @@
     </div>
     <div class="hero-inner-part">
       <h1>Hi! I'm Karel.</h1>
-      <h2>I build web things.</h2>
+      <h2>I build web thingies.</h2>
     </div>
   </div>
 </div>
