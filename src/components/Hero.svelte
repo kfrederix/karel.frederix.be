@@ -1,5 +1,7 @@
 <script>
-  export let aboutMe;
+  export let avatarUrl;
+  export let title;
+  export let subTitle;
 </script>
 
 <style>
@@ -58,11 +60,11 @@
           specifying width and height on the img tag explicitly allows 
           the image to take up the space before it loads
       -->
-      <img class="avatar" alt="avatar" src="{aboutMe.imageUrl}?h=361" width="120" height="120"/>
+      <img class="avatar" alt="avatar" src="{avatarUrl}?h=361" width="120" height="120"/>
     </div>
     <div class="hero-inner-part">
-      <h1>Hi! I'm Karel.</h1>
-      <h2>I build web thingies.</h2>
+    <h1>{title}</h1>
+    <h2>{subTitle}</h2>
     </div>
   </div>
 </div>
