@@ -20,7 +20,7 @@
     padding: 2rem 0 3rem 0;
   }
   .hero-inner {
-    padding: 0 1rem;
+    padding: 0 1.25rem;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
