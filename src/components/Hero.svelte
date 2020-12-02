@@ -28,6 +28,7 @@
     align-items: center;
     max-width: 940px;
     margin: 0 auto;
+    box-sizing: border-box;
   }
   .hero-inner-part {
     padding: 0 1rem;

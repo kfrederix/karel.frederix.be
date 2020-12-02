@@ -15,7 +15,7 @@
     justify-content: space-between;
     max-width: 940px;
     margin: 0 auto;
-    padding: 1rem 0.5rem 1rem 1rem;
+    padding: 1rem .75rem 1rem 1.25rem;
     /*border-bottom: solid 1px #666;*/
 
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
