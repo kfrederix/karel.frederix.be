@@ -29,7 +29,7 @@
 <Header aboutMe={data.aboutMe} permalink={request.permalink} />
 
 {#if request.permalink === '/'}
-  <Hero avatarUrl={data.aboutMe.imageUrl} title="Hi! I'm Karel." subTitle="I build web thingies." />
+  <Hero avatarUrl={data.aboutMe.imageUrl} title="Hi! I'm Karel." subTitle="I build web things." />
 {/if}
 
 <section>
