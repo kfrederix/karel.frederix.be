@@ -51,6 +51,9 @@
 
 <svelte:head>
   <meta name="description" content="An overview of recent work by Karel Frederix" />
+
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ -->
+  <link rel="prefetch" href="/" />
 </svelte:head>
 
 <h1>Projects</h1>
