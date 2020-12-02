@@ -13,7 +13,7 @@
   h2 {
     margin: 0.5rem 0 0 0;
     font-size: 1.3rem;
-    color: #cdd;
+    color: #bbb;
   }
   .hero {
     background-color: var(--header-bg-color);
