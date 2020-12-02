@@ -45,8 +45,8 @@
 <p>An overview of some recent projects which I have worked on.</p>
 <div class="projects">
   {#each data.projects as project}
-    <div class="project box">
-      <h2 id={project.slug}>{project.name}</h2>
+    <div id={project.slug} class="project box">
+      <h2>{project.name}</h2>
       {@html project.description}
       <div class="photo-gallery">
         {#each project.photos as photo, index}
