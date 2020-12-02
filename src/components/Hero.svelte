@@ -31,7 +31,7 @@
     box-sizing: border-box;
   }
   .hero-inner-part {
-    padding: 0 1rem;
+    /*padding: 0 1rem;*/
   }
   .avatar {
     vertical-align: middle;
