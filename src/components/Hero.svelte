@@ -65,7 +65,7 @@
     </div>
     <div class="hero-inner-part">
     <h1>{title}</h1>
-    <h2>{subTitle}</h2>
+    <h2>{subTitle}<br/>Mostly for web.</h2>
     </div>
   </div>
 </div>
