@@ -39,13 +39,14 @@
   /*
     a nice trick for aestetically pleasing anchor offsets,
     taking into account our fixed header on top:
-    https://css-tricks.com/hash-tag-links-padding/
+    https://stackoverflow.com/a/13184714
+    (also see: https://css-tricks.com/hash-tag-links-padding/)
   */
-  h2::before { 
-    content: "";
+  .project-anchor {
     display: block;
-    height: 100px;
-    margin: -100px 0 0;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
   }
 </style>
 
@@ -61,7 +62,8 @@
 <div class="projects">
   {#each data.projects as project}
     <div class="project box">
-      <h2 id={project.slug}>{project.name}</h2>
+      <div class="project-anchor" id={project.slug}></div>
+      <h2>{project.name}</h2>
       {@html project.description}
       <div class="photo-gallery">
         {#each project.photos as photo, index}
