@@ -5,27 +5,20 @@
 <style>
   h1 {
     color: #eee;
-    margin: 2.5rem 0 1rem 0;
+    margin: 1.5rem 0 0rem 0;
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
   }
   h2 {
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 0.5rem 0;
     font-size: 1.7rem;
-    font-weight: 700;
+    font-weight: 400;
     color: #bbb;
     line-height: 1.5;
   }
-  h3 {
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.5;
-    color: #6aa;
-  }
   .hero {
     background-color: var(--header-bg-color);
-    padding: 2rem 0 3rem 0;
+    padding: 3rem 0 3rem 0;
   }
   .hero-inner {
     padding: 0 1.25rem;
@@ -45,8 +38,8 @@
     border-radius: 50%;
     /*border: solid 4px #ddd;*/
     box-shadow: 0 0 1rem 0 rgba(220,220,220,0.3);
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
 
   @media screen and (max-width: 480px) {
@@ -70,8 +63,7 @@
     </div>
     <div>
       <h1>Hi! I'm Karel.</h1>
-      <h2>I write code.</h2>
-      <h3>Mostly for web.</h3>
+      <h2>I build web things.</h2>
     </div>
   </div>
 </div>
