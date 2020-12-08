@@ -45,7 +45,7 @@
   .project-anchor {
     display: block;
     position: relative;
-    top: -100px;
+    top: -2rem;
     visibility: hidden;
   }
 </style>
