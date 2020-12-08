@@ -38,8 +38,8 @@
     border-radius: 50%;
     /*border: solid 4px #ddd;*/
     box-shadow: 0 0 1rem 0 rgba(220,220,220,0.3);
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   @media screen and (max-width: 480px) {
