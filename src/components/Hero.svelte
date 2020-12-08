@@ -5,20 +5,20 @@
 <style>
   h1 {
     color: #eee;
-    margin: 1.5rem 0 0rem 0;
-    font-size: 2.5rem;
-    font-weight: 600;
+    margin: 1rem 0 0rem 0;
+    font-size: 2.25rem;
+    font-weight: 500;
   }
   h2 {
-    margin: 1rem 0 0.5rem 0;
-    font-size: 1.7rem;
+    margin: 0.75rem 0 0.5rem 0;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #bbb;
     line-height: 1.5;
   }
   .hero {
     background-color: var(--header-bg-color);
-    padding: 3rem 0 3rem 0;
+    padding: 2rem 0 2.5rem 0;
   }
   .hero-inner {
     padding: 0 1.25rem;
@@ -46,6 +46,7 @@
     .hero-inner {
       justify-content: center;
       text-align: center;
+      width: 100%;
     }
   }
 </style>
