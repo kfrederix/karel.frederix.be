@@ -1,11 +1,12 @@
 <script lang="ts">
   import type { About } from '$lib/data/types';
+
 	export let about: About;
   export let currentPath: string;
 
   let navigation = [
-    { name: 'About', path: '/', isActive: false },
-    { name: 'Projects', path: '/projects', isActive: false },
+    { name: 'About', path: '/' },
+    { name: 'Projects', path: '/projects' },
   ];
 </script>
 

@@ -27,7 +27,8 @@
 </script>
 
 <svelte:head>
-	<title>Karel Frederix - Projects</title>
+	<title>Projects | Karel Frederix</title>
+  <meta name="description" content="An overview of some recent projects which I have worked on.">
 </svelte:head>
 
 <div>

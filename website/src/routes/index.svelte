@@ -15,7 +15,8 @@
 </script>
 
 <svelte:head>
-	<title>Karel Frederix</title>
+	<title>Karel Frederix | Software Engineer</title>
+  <meta name="description" content="Karel Frederix is a Software Engineer based in Belgium (Limburg area).">
 </svelte:head>
 
 <div>
