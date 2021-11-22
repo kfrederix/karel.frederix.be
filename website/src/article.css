@@ -1,0 +1,24 @@
+article {
+  @apply text-lg text-gray-700 leading-8 max-w-prose;
+}
+
+article p {
+  @apply my-5;
+}
+
+article a {
+  @apply text-green-600 font-semibold underline;
+}
+
+article ul {
+  @apply ml-9 my-5;
+}
+
+article ul > li {
+  @apply relative items-center px-0 my-3;
+}
+
+article ul > li:before {
+  @apply absolute top-0 left-0 -ml-8 mt-0.5 bg-transparent;
+  content: url(/check.svg);
+}
