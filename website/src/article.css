@@ -15,7 +15,7 @@ article ul {
 }
 
 article ul > li {
-  @apply relative items-center px-0 my-3;
+  @apply relative items-center px-0 my-2;
 }
 
 article ul > li:before {
