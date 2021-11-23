@@ -1,24 +1,29 @@
 <script context="module" lang="ts">
   import type { Load } from '@sveltejs/kit';
+  import type { About, Project } from '$lib/data/types';
 
   // see https://kit.svelte.dev/docs#loading
-  export const load: Load = async ({ fetch, page }) => {
+  export const load: Load = async ({ fetch, page, stuff }) => {
     const currentPath = page.path;
-    const res = await fetch('/api/about.json');
+    let { about, projects } = stuff as { about: About, projects: Project[] };
 
-    if (res.ok) {
-      const about = await res.json();
-
-      return {
-        props: { about, currentPath },
-        stuff: { about },
-      };
+    if (!about || !projects) {
+      const [resAbout, resProjects] = await Promise.all([
+        fetch('/api/about.json'),
+        fetch('/api/projects.json'),
+      ]);
+  
+      if (resAbout.ok) {
+        about = await resAbout.json();
+      }
+      if (resProjects.ok) {
+        projects = await resProjects.json();
+      }
     }
 
-    const { message } = await res.json();
-
     return {
-      error: new Error(message)
+      props: { about, currentPath },
+      stuff: { about, projects },
     };
   };
 </script>
@@ -26,7 +31,6 @@
 <script lang="ts">
 	import '../app.css';
 	import Header from '../lib/header.svelte';
-  import type { About } from '$lib/data/types';
 
 	export let about: About;
   export let currentPath: string;

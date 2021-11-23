@@ -2,22 +2,10 @@
   import type { Load } from '@sveltejs/kit';
 
   // see https://kit.svelte.dev/docs#loading
-  export const load: Load = async ({ fetch }) => {
-    const res = await fetch('/api/projects.json');
-
-    if (res.ok) {
-      const projects = await res.json();
-
-      return {
-        props: { projects },
-      };
-    }
-
-    const { message } = await res.json();
-
+  export const load: Load = async ({ stuff }) => {
     return {
-      error: new Error(message)
-    };
+      props: { projects: stuff.projects }
+    }
   };
 </script>
 
