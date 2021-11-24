@@ -10,9 +10,9 @@
   </div>
   <article>
     <ul>
-      <li>Email: <a target="_blank" rel="external" href="mailto:karelfrederix@gmail.com">karelfrederix@gmail.com</a></li>
-      <li>LinkedIn: <a target="_blank" rel="external" href="https://linkedin.com/in/kfrederix">linkedin.com/in/kfrederix</a></li>
-      <li>GitHub: <a target="_blank" rel="external" href="https://github.com/kfrederix">github.com/kfrederix</a></li>
+      <li>Email: <a href="mailto:karelfrederix@gmail.com">karelfrederix@gmail.com</a></li>
+      <li>LinkedIn: <a target="_blank" rel="external noopener" href="https://linkedin.com/in/kfrederix">linkedin.com/in/kfrederix</a></li>
+      <li>GitHub: <a target="_blank" rel="external noopener" href="https://github.com/kfrederix">github.com/kfrederix</a></li>
     </ul>
   </article>
 </div>
