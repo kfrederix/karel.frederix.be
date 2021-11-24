@@ -1,9 +1,3 @@
-<script lang="ts">
-  let showEmail: () => {
-
-  };
-</script>
-
 <svelte:head>
 	<title>Contact | Karel Frederix</title>
   <meta name="description" content="Get in touch with Karel Frederix, a Software Engineer from Belgium.">
