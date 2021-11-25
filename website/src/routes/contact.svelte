@@ -4,9 +4,9 @@
 </svelte:head>
 
 <div>
-  <h1 class="font-bold text-2xl mb-6">Say Hello</h1>
+  <h1 class="mb-6 font-bold text-2xl dark:text-white">Say Hello</h1>
   <div class="mb-6">
-    <p class="text-lg">Got a question for me? Or just want to say hello? Don't hesitate to reach out!</p>
+    <p class="text-lg dark:text-gray-200">Got a question for me? Or just want to say hello? Don't hesitate to reach out!</p>
   </div>
   <article>
     <ul>

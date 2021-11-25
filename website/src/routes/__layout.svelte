@@ -28,8 +28,8 @@
 </script>
 
 <script lang="ts">
-	import '../app.css';
-	import Header from '../lib/header.svelte';
+	import '../styles/app.css';
+	import Header from '../lib/components/header.svelte';
 
 	export let about: About;
   export let currentPath: string;

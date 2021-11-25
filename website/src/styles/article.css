@@ -1,6 +1,9 @@
 article {
   @apply text-base text-gray-700 leading-8 max-w-prose;
 }
+html.dark article {
+  @apply text-gray-200;
+}
 
 .article-lg {
   @apply text-lg;
@@ -12,6 +15,9 @@ article p {
 
 article a {
   @apply text-green-600 font-semibold underline;
+}
+html.dark article a {
+  @apply text-green-300;
 }
 
 article ul {

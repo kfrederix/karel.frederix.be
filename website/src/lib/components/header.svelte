@@ -21,15 +21,17 @@
     <div class="flex flex-col items-start justify-center">
       <div class="py-1">
         <a sveltekit:prefetch href="/" class="">
-          <span class="leading-none font-extrabold text-xl text-black sm:text-3xl">
+          <span class="leading-none font-extrabold text-xl text-black dark:text-white sm:text-3xl">
             {about.name}
           </span>
         </a>
       </div>
 
-      <div class="py-1 space-x-2 text-sm uppercase text-gray-600">
+      <div class="py-1 space-x-2 text-sm uppercase text-gray-600 dark:text-gray-400">
         {#each navigation as navItem}
-          <a sveltekit:prefetch class="hover:text-green-600" class:active={currentPath === navItem.path} href={navItem.path}>
+          <a sveltekit:prefetch
+            class="hover:text-green-600 dark:hover:text-green-300 {currentPath === navItem.path ? 'font-bold text-green-600 dark:text-green-300' : ''}"
+            href={navItem.path}>
             {navItem.name}
           </a>
         {/each}
@@ -37,9 +39,3 @@
     </div>
   </div>
 </nav>
-
-<style>
-  .active {
-    @apply text-green-600 font-bold;
-  }
-</style>

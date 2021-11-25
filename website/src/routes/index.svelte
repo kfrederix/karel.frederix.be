@@ -20,7 +20,7 @@
 </svelte:head>
 
 <div>
-  <h1 class="font-bold text-2xl mb-6">About me</h1>
+  <h1 class="mb-6 font-bold text-2xl dark:text-white">About me</h1>
   <article class="article-lg">
     {@html about.bio}
   </article>
