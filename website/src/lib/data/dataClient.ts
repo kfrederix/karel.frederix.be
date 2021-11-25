@@ -34,6 +34,9 @@ export const getProjects = async (): Promise<Project[]> => {
 	const projects = await client.fetch<Project[]>(query);
 	projects.forEach((proj) => {
 		proj.description = blocksToHtml({ blocks: proj.description });
+		proj.photos.forEach(photo => {
+			photo.url += '?w=560';
+		});
 	});
 	return projects;
 }
