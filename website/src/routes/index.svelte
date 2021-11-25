@@ -21,7 +21,7 @@
 
 <div>
   <h1 class="font-bold text-2xl mb-6">About me</h1>
-  <article>
+  <article class="article-lg">
     {@html about.bio}
   </article>
 </div>

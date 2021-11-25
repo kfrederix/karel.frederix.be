@@ -1,5 +1,9 @@
 article {
-  @apply text-lg text-gray-700 leading-8 max-w-prose;
+  @apply text-base text-gray-700 leading-8 max-w-prose;
+}
+
+.article-lg {
+  @apply text-lg;
 }
 
 article p {
@@ -19,6 +23,6 @@ article ul > li {
 }
 
 article ul > li:before {
-  @apply absolute top-0 left-0 -ml-8 mt-0.5 bg-transparent;
+  @apply absolute top-0 left-0 -ml-8 mt-1 bg-transparent;
   content: url(/check.svg);
 }

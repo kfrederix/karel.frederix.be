@@ -40,9 +40,3 @@
     {/each}
   </div>
 </div>
-
-<style>
-  article {
-    @apply text-base;
-  }
-</style>
