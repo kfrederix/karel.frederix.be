@@ -16,7 +16,7 @@
   <div class="flex items-center">
     <div class="mr-6 sm:mr-8 xl:-ml-2">
       <a sveltekit:prefetch href="/" class="no-underline">
-        <img class="w-14 h-14 sm:w-20 sm:h-20 rounded-full" alt="avatar" src={about.imageUrl} />
+        <img class="w-14 h-14 sm:w-20 sm:h-20 rounded-full border-white border-2" alt="avatar" src={about.imageUrl} />
       </a>
     </div>
     <div class="flex flex-col items-start justify-center">
