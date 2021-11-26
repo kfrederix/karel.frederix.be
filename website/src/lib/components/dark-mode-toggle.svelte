@@ -9,7 +9,7 @@
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
       console.debug(`changed to ${e.matches ? "dark" : "light"} mode`);
-      setDarkMode(e.matches);
+      setDarkMode(e.matches, false);
     });
 	});
 
@@ -17,13 +17,19 @@
     setDarkMode(!darkMode);
   };
 
-  function setDarkMode(dark: boolean) {
+  function setDarkMode(dark: boolean, store: boolean = true) {
     darkMode = dark;
-    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+
     if (darkMode) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
+    }
+
+    if (store) {
+      localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+    } else {
+      localStorage.removeItem('theme');
     }
   }
 </script>
