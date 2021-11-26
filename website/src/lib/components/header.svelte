@@ -1,4 +1,5 @@
 <script lang="ts">
+  import DarkModeToggle from './dark-mode-toggle.svelte';
   import type { About } from '$lib/data/types';
 
 	export let about: About;
@@ -27,7 +28,7 @@
         </a>
       </div>
 
-      <div class="py-1 space-x-2 text-sm uppercase text-gray-600 dark:text-gray-400">
+      <div class="py-1 space-x-2 text-sm uppercase text-gray-600 dark:text-gray-400 flex items-center">
         {#each navigation as navItem}
           <a sveltekit:prefetch
             class="hover:text-green-600 dark:hover:text-green-300 {currentPath === navItem.path ? 'font-bold text-green-600 dark:text-green-300' : ''}"
@@ -35,6 +36,10 @@
             {navItem.name}
           </a>
         {/each}
+
+        <span class="ml-2 leading-3">
+          <DarkModeToggle></DarkModeToggle>
+        </span>
       </div>
     </div>
   </div>
