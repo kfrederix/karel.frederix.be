@@ -1,25 +1,34 @@
 <script lang="ts">
-import { onMount } from "svelte";
-
+  import { onMount } from "svelte";
 
   let darkMode = false;
   
   onMount(() => {
-		darkMode = (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches));
+    const watchMediaDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+		darkMode = (localStorage.theme === 'dark' || (!('theme' in localStorage) && watchMediaDarkMode.matches));
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      console.debug(`changed to ${e.matches ? "dark" : "light"} mode`);
+      setDarkMode(e.matches);
+    });
 	});
 
   function toggleDarkMode() {
-    darkMode = !darkMode;
+    setDarkMode(!darkMode);
+  };
+
+  function setDarkMode(dark: boolean) {
+    darkMode = dark;
     localStorage.setItem('theme', darkMode ? 'dark' : 'light');
     if (darkMode) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
-  };
+  }
 </script>
 
-<button on:click={toggleDarkMode} aria-label="Toggle Dark Mode" class="px-3 h-full w-11 fill-current">
+<button on:click={toggleDarkMode} aria-label="Toggle Dark Mode" class="px-2">
   {#if darkMode}
   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
     <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />

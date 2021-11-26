@@ -28,7 +28,7 @@
         </a>
       </div>
 
-      <div class="py-1 space-x-2 text-sm uppercase text-gray-600 dark:text-gray-400 flex items-center">
+      <div class="py-1 space-x-2 sm:space-x-5 text-sm uppercase text-gray-600 dark:text-gray-400 flex items-center">
         {#each navigation as navItem}
           <a sveltekit:prefetch
             class="hover:text-green-600 dark:hover:text-green-300 {currentPath === navItem.path ? 'font-bold text-green-600 dark:text-green-300' : ''}"
@@ -37,7 +37,7 @@
           </a>
         {/each}
 
-        <span class="ml-2 leading-3">
+        <span class="leading-3 hover:text-gray-600 dark:hover:text-green-300">
           <DarkModeToggle></DarkModeToggle>
         </span>
       </div>
