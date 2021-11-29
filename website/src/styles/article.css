@@ -1,16 +1,23 @@
 article {
-  @apply text-base text-gray-700 leading-8 max-w-prose;
+  @apply text-base text-gray-700 leading-7 max-w-prose;
 }
 html.dark article {
   @apply text-gray-200;
 }
 
 .article-lg {
-  @apply text-lg;
+  @apply text-lg leading-8;
 }
 
 article p {
   @apply my-5;
+}
+
+article em {
+  @apply not-italic text-green-600;
+}
+html.dark article em {
+  @apply text-green-300;
 }
 
 article a {
@@ -25,14 +32,17 @@ article ul {
 }
 
 article ul > li {
-  @apply relative items-center px-0 my-1;
+  @apply relative px-0 my-2 leading-6;
 }
 
 article ul > li:before {
-  @apply absolute top-0 left-0 -ml-8 mt-1 bg-transparent;
+  @apply absolute top-0 left-0 -ml-8 mt-0.5 bg-transparent w-5 h-5;
   content: url(/check.svg);
+}
+.article-lg ul > li:before {
+  @apply mt-1;
 }
 
 .article-lg ul > li {
-  @apply my-2;
+  @apply my-2 leading-7;
 }

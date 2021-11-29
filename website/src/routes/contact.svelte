@@ -8,7 +8,8 @@
   <div class="mb-6">
     <p class="text-lg dark:text-gray-200">Got a question for me? Or just want to say hello? Don't hesitate to reach out!</p>
   </div>
-  <article>
+
+  <div class="ml-1 space-y-3 text-gray-700 dark:text-gray-200">
     <div class="flex items-center">
       <span class="mr-3">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -25,5 +26,5 @@
       </span>
       <a target="_blank" rel="external noopener" href="https://linkedin.com/in/kfrederix">linkedin.com/in/kfrederix</a>
     </div>
-  </article>
+  </div>
 </div>
