@@ -14,7 +14,7 @@ article p {
 }
 
 article a {
-  @apply text-green-600 font-semibold underline;
+  @apply text-green-600 underline;
 }
 html.dark article a {
   @apply text-green-300;
@@ -25,10 +25,14 @@ article ul {
 }
 
 article ul > li {
-  @apply relative items-center px-0 my-2;
+  @apply relative items-center px-0 my-1;
 }
 
 article ul > li:before {
   @apply absolute top-0 left-0 -ml-8 mt-1 bg-transparent;
   content: url(/check.svg);
+}
+
+.article-lg ul > li {
+  @apply my-2;
 }

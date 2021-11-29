@@ -10,6 +10,7 @@ const config = {
 		extend: {
 			colors: {
 				gray: colors.trueGray,
+				green: colors.teal,
 			},
 		}
 	},
