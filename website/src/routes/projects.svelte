@@ -22,7 +22,7 @@
 <div>
   <h1 class="mb-6 font-bold text-2xl dark:text-white">Projects</h1>
   <div class="mb-6">
-    <p class="text-lg dark:text-gray-200">An overview of some recent projects I have worked on.</p>
+    <p class="text-lg dark:text-gray-200">Highlighting some recent projects I have worked on in my free time.</p>
   </div>
   <div class="w-900 space-y-10">
     {#each projects as project}
