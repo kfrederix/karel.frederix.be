@@ -1,2 +1,3 @@
 # Karel Frederix' website
-Built with SvelteKit and tailwindcss
+ - The frontend is built with SvelteKit and tailwindcss
+ - The data is nicely managed by Sanity.io
