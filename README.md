@@ -1,1 +1,2 @@
-# Karel Frederix' website (rewritten with SvelteKit)
+# Karel Frederix' website
+Built with SvelteKit and tailwindcss
