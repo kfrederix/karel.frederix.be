@@ -6,7 +6,7 @@ import { getProjects } from '$lib/data/dataClient';
 export const get: RequestHandler = async (/*request*/) => {
   const projects: Project[] = await getProjects();
 
-	return {
+  return {
     body: projects,
   };
 };

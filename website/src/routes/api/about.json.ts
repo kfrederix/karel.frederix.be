@@ -6,7 +6,7 @@ import { getAbout } from '$lib/data/dataClient';
 export const get: RequestHandler = async (/*request*/) => {
   const about: About = await getAbout();
 
-	return {
+  return {
     body: about,
   };
 };
