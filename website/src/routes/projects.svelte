@@ -26,7 +26,7 @@
   </div>
   <div class="w-900">
     {#each projects as project}
-    <div class="px-8 pb-8 pt-6 -mx-4 md:rounded-lg bg-white dark:bg-gray-700 shadow-xl dark:shadow-none">
+    <div class="mb-8 px-8 pb-8 pt-6 -mx-4 md:rounded-lg bg-white dark:bg-gray-700 shadow-xl dark:shadow-none">
       <article>
         <h3 class="leading-none">
           <span class="font-normal text-xl text-green-600 dark:text-green-300">{project.name}</span>
