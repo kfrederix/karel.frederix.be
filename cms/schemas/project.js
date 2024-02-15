@@ -16,8 +16,8 @@ export default {
         {
           title: 'Block',
           type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: [{title: 'Bullet', value: 'bullet'}],
+          styles: [{ title: 'Normal', value: 'normal' }],
+          lists: [{ title: 'Bullet', value: 'bullet' }],
         },
       ],
     },
@@ -25,7 +25,7 @@ export default {
       name: 'photos',
       title: 'Photos',
       type: 'array',
-      of: [{ type: 'image' }]
+      of: [{ type: 'image' }],
     },
   ],
   preview: {
@@ -33,4 +33,4 @@ export default {
       title: 'name',
     },
   },
-}
+};
